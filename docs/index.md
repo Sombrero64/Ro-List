@@ -18,7 +18,7 @@ local Settings =
 	-- The kick message if the player isn't whitelisted.
 	["Whitelist Kick"] = "",
 	-- A table/arrey/list of users that are blacklisted.
-	["Blacklisted Users"] = {"User02", "User04", "User05"},
+	["Blacklisted Users"] = {"User02", "User04", "User05"}
 	-- The kick message if the player is blacklisted.
 	["Blacklist Kick"] = "You been manually blacklisted from the place."
 }
