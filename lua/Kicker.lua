@@ -1,14 +1,14 @@
-local Settings = require(script.Parent.Settings)
+local Settings = require(script:WaitForChild("Settings"))
 
 game.Players.PlayerAdded:Connect(function(player)
-	if Settings["Only Whitelisted"] == true then
-		for i, v in pairs(Settings["Whitelisted Users"]) do
+	if Settings["Whitelisted"] then
+		for i, v in pairs(Settings["Whitelist"]) do
 			if player.Name ~= v then
 				player:Kick(Settings["Whitelist Kick"])
 			end
 		end
 	else
-		for i, v in pairs(Settings["Blacklisted Users"]) do
+		for i, v in pairs(Settings["Blacklist"]) do
 			if player.Name == v then
 				player:Kick(Settings["Blacklist Kick"])
 			end
