@@ -1,14 +1,12 @@
-local Settings = 
-{
-	-- Only allow whitelisted users from accessing your place.
-	["Only Whitelisted"] = false,
-	-- A table/arrey/list of users that are whitelisted.
-	["Whitelisted Users"] = {""},
-	-- The kick message if the player isn't whitelisted.
+return {
+	-- Enabling this would allow the players whitelisted join your place.
+	["Whitelisted"] = false,
+	-- Player Whitelist
+	["Whitelist"] = {""},
+	-- If the non-whitelisted player joins your sever, they would be kicked with the message.
 	["Whitelist Kick"] = "",
-	-- A table/arrey/list of users that are blacklisted.
-	["Blacklisted Users"] = {""},
-	-- The kick message if the player is blacklisted.
+	-- Player Blacklist
+	["Blacklist"] = {""},
+	-- If the blocked player joins your sever, they would be kicked with the message.
 	["Blacklist Kick"] = ""
 }
-return Settings
